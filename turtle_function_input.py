@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 # turtle graphic 함수(def), input 함수 사용하기
+=======
+# turtle graphic 함수 사용하기
+>>>>>>> c4ff00c9581906b18dd2fffa73dcd876e95d178c
 import turtle
 
 # c = ["red", "green", "blue", "yellow"]  # circle color
@@ -15,6 +19,7 @@ def myTurtleMake(tur, color, move, radius):
 
 while True:
     c = input("색깔 : ")
+<<<<<<< HEAD
     if c=='q':
         print('bye bye')
         exit(0)
@@ -24,6 +29,13 @@ while True:
         print("----------------------")
         t = turtle.Turtle()  # Turtle 객체 하나 생성
         myTurtleMake(t, c, m, r)  # 함수 호출
+=======
+    m = input("이동거리 : ")
+    r = input("원의 반지름은 :")
+    print("----------------------")
+    t = turtle.Turtle()  # Turtle 객체 하나 생성
+    myTurtleMake(t, c, m, r)  # 함수 호출
+>>>>>>> c4ff00c9581906b18dd2fffa73dcd876e95d178c
 
 turtle.mainloop()
 turtle.bye()
