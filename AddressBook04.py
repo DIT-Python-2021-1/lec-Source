@@ -7,8 +7,8 @@ def main():
    try:
        with open("./addressData.txt", "rb")  as f :
             address_book = pickle.load(f)
-   except FileNotFoundError:
-       pass
+   except FileNotFoundError as e:
+       print('파일이 존재하지 않습니다..', e)
 
    while True:
        user = display_menu()
